@@ -19,7 +19,28 @@
     }
   ],
   "products": {},
-  "category": {},
+  "category": [
+    {
+      "id": 1,
+      "name": "Nam"
+    },
+    {
+      "id": 2,
+      "name": "Nữ"
+    },
+    {
+      "name": "Trẻ em",
+      "id": 3
+    },
+    {
+      "name": "POLO YODY",
+      "id": 4
+    },
+    {
+      "name": "ĐỒNG PHỤC",
+      "id": 5
+    }
+  ],
   "banner": [
     {
       "id": 1,

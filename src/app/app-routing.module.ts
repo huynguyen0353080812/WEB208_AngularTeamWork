@@ -5,6 +5,8 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { AboutComponent } from './pages/about/about.component';
 import { BannerAddComponent as ABannerAddComponent } from './pages/admin/banner-add/banner-add.component';
 import { BannersComponent as ABannersComponent } from './pages/admin/banners/banners.component';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { CategoryEditComponent } from './pages/admin/category-edit/category-edit.component';
 import { CategoryComponent } from './pages/admin/category/category.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ProductsComponent as AProductsComponent } from './pages/admin/products/products.component';
@@ -33,6 +35,8 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'products', component: AProductsComponent },
       { path: 'category', component: CategoryComponent },
+      { path: 'category/add', component: CategoryAddComponent },
+      { path: 'category/edit/:id', component: CategoryEditComponent },
       { path: 'banner', component: ABannersComponent },
       { path: 'banner/add', component: ABannerAddComponent },
       { path: 'users', component: UsersComponent },

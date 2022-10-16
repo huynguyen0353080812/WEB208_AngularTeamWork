@@ -29,6 +29,8 @@ import { CategoryComponent } from './pages/admin/category/category.component';
 import { UsersComponent } from './pages/admin/users/users.component';
 import { BannersComponent } from './pages/admin/banners/banners.component';
 import { BannerAddComponent } from './pages/admin/banner-add/banner-add.component';
+import { CategoryAddComponent } from './pages/admin/category-add/category-add.component';
+import { CategoryEditComponent } from './pages/admin/category-edit/category-edit.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { BannerAddComponent } from './pages/admin/banner-add/banner-add.componen
     CategoryComponent,
     UsersComponent,
     BannersComponent,
-    BannerAddComponent
+    BannerAddComponent,
+    CategoryAddComponent,
+    CategoryEditComponent
   ],
   imports: [
     BrowserModule,

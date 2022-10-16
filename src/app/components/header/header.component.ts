@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IUserInfo } from 'src/app/interfaces/user';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +9,8 @@ import { IUserInfo } from 'src/app/interfaces/user';
 })
 export class HeaderComponent implements OnInit {
 
-
-  constructor() { }
+  ListCate:any= []
+  constructor(private categoryService:CategoryService) { }
 
   toggle: boolean = false;
   toggleUser: boolean = false;
@@ -24,6 +25,9 @@ export class HeaderComponent implements OnInit {
 
       this.isLogged = true
     }
+    this.categoryService.getCategory().subscribe(data=>{
+      this.ListCate=data
+    })
 
   }
   handleToggle(value?: string) {
